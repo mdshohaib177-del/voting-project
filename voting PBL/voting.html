@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="vote-container">
+
+    <h1>Cast Your Vote</h1>
+
+    <div class="candidate-grid">
+
+        <div class="candidate-card">
+            <img src="assests/candidate1.jpg" alt="Candidate A">
+            <h3>Candidate A</h3>
+
+            <button class="btn"
+            onclick="vote('Candidate A')">
+                Vote
+            </button>
+        </div>
+
+        <div class="candidate-card">
+            <img src="assests/candidate2.jpg" alt="Candidate B">
+            <h3>Candidate B</h3>
+
+            <button class="btn"
+            onclick="vote('Candidate B')">
+                Vote
+            </button>
+        </div>
+
+        <div class="candidate-card">
+            <img src="assests/candidate3.jpg" alt="Candidate C">
+            <h3>Candidate C</h3>
+
+            <button class="btn"
+            onclick="vote('Candidate C')">
+                Vote
+            </button>
+        </div>
+
+    </div>
+
+    <br>
+
+    <button class="btn" onclick="logout()">
+        Logout
+    </button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/voting.js"></script>
+
+</body>
+</html>
