@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Create Voter Account</h2>
+
+<input id="name" type="text" placeholder="Full Name">
+
+<input id="usn" type="text" placeholder="USN">
+
+<!-- <input id="password" type="password" placeholder="Password"> -->
+
+<div class="camera-box">
+    <video id="signupVideo" autoplay muted playsinline width="320" height="240"></video>
+    <p id="faceCaptureStatus">Click Start Camera and allow access before capture.</p>
+</div>
+
+<button class="btn" onclick="startSignupCamera()">
+Start Camera
+</button>
+
+<button class="btn" onclick="captureAndStoreFace()">
+Capture Face
+</button>
+
+<button class="btn" onclick="registerUser()">
+Register
+</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/faceAuth.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

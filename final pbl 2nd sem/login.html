@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Voter Authentication</h2>
+
+<input id="loginUsn" type="text" placeholder="Enter USN">
+
+<div class="camera-box">
+    <video id="loginVideo" autoplay muted playsinline width="320" height="240"></video>
+    <p id="faceLoginStatus">Click Start Camera and allow access before verify.</p>
+</div>
+
+<button class="btn" onclick="startLoginCamera()">
+Start Camera
+</button>
+
+<button class="btn" onclick="verifyFace()">
+Verify Face
+</button>
+
+<button class="btn" onclick="loginUser()">
+Login
+</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/faceAuth.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
